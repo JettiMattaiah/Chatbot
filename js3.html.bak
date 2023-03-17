@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+     <div id="chatbot">
+  <div id="chat-window">
+    <!-- Chat messages go here -->
+  </div>
+  <form id="message-form">
+    <input type="text" id="message-input" placeholder="Type your message here...">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+</div>
+<script>
+function generateOTP() {
+  const digits = '0123456789';
+  let OTP = '';
+  for (let i = 0; i < 6; i++) {
+    OTP += digits[Math.floor(Math.random() * 10)];
+  }
+  return OTP;
+}
+</script>
+  
+ </body>
+</html>
